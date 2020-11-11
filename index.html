@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Apps Land</title>
+    <link rel="stylesheet" type="text/css" href="/resources/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- <script src="https://kit.fontawesome.com/adee88b6f5.js" crossorigin="anonymous"></script> -->
+    <script src="jquery-2.1.4.js"></script>
+</head>
+
+<body>
+    <!-- --------- Hero----------- -->
+    <section class="banner">
+        <div class="container">
+            <!------------- Header ----------- -->
+            <header>
+                <a href="#" class="logo">AppsLand<span>.</span></a>
+                <div class="menuToggle" onclick="toggleMenu()"></div>
+                <ul class="navigation">
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#menu">Services</a></li>
+                    <li> <a href="#team">Portfolio</a></li>
+                    <li> <a href="#testimonials">Testimonials</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                </ul>
+            </header>
+
+            <div class="content D-flex">
+                <div class="title-box center-align">
+                    <h1>Software Development Company</h1>
+                    <p>All your Digital Solutions are here.</p>
+                    <div class="btns">
+                        <a href="#" class="btn-ghost">View More</a>
+                        <a href="#" class="btn-full">Contact Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ---------- About US --------- -->
+    <section class="about">
+        <div class="container">
+            <div class="title-box center-align">
+                <h2>About us</h2>
+                <p>A brief introduction of our company</p>
+            </div>
+            <div class="D-flex">
+                <div class="col img-col">
+                    <img src="/resources/images/done.png" alt="">
+                </div>
+                <div class="col text-col">
+                    <p><b>The Apps Land</b> is always striving to provide best and quality solutions to its users.
+                        <b>The Apps Land</b> is a Software Development studio based in Islamabad, Pakistan.</p><br>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem, ab omnis! Pariatur,
+                        ducimus eius? Facere eveniet quas tempore atque fugit quos, consequatur ad doloremque inventore
+                        laboriosam esse odit eius quia.</p>
+                    <a href="#" class="btn-ghost-blue">Our Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- -------- Services ---------- -->
+    <section class="services">
+        <div class="container">
+            <div class="title-box center-align">
+                <h2>Our Services</h2>
+                <p>A list of services provided by our company</p>
+            </div>
+            <div class="services-container D-flex">
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/android-icon.svg" alt=""></div>
+                    <h3>Android App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/apple-icon.svg" alt=""></div>
+                    <h3>IOS App Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/digital-marketing.svg" alt=""></div>
+                    <h3>Third-Party Marketing</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+            </div>
+            <div class="services-container D-flex">
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/game-icon1.svg" alt=""></div>
+                    <h3>Android Game Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/game-icon2.svg" alt=""></div>
+                    <h3>IOS Game Development</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+                <div class="service-box">
+                    <div class="icon-bx">
+                        <img src="/resources/icons/megaphone.svg" alt=""></div>
+                    <h3>Other Service</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non mollitia officiis error
+                        voluptatibus eligendi, odit alias necessitatibus quos asperiores,sint!</p>
+                </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function () {
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+        });
+
+        function toggleMenu() {
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
