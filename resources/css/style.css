@@ -19,7 +19,6 @@ body {
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
 }
-
 html {
     scroll-behavior: smooth;
 }
@@ -40,13 +39,19 @@ section {
 h1 {
     font-family: 'Poppins', sans-serif;
 }
-
+p, li {
+    color: #2b2b2b;
+}
 .D-flex {
     display: flex;
 }
 
 .col {
     width: 50%;
+}
+
+.btns {
+    margin-top: 1.667rem;
 }
 
 .btn-ghost {
@@ -177,7 +182,7 @@ header.sticky .navigation li a {
 /* ---- Hero ---------- */
 .banner {
     padding: 0 0;
-    background-image: url(/resources/images/main-bg.jpg);
+    background-image: url(/resources/images/main-bg1.png);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -205,10 +210,6 @@ header.sticky .navigation li a {
     font-weight: 300;
     color: whitesmoke;
     margin-bottom: 20px;
-}
-
-.banner .container .content .title-box .btns {
-    margin-top: 40px;
 }
 
 .banner .container .content .title-box .btn-full {
@@ -246,13 +247,13 @@ header.sticky .navigation li a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(255, 255, 255, .1);
+    background-color: rgba(0, 0, 0, .3);
     padding: 30px;
     width: 500px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 .service-box .icon-bx {
-    width: 60px;
+    width: 70px;
     margin-bottom: 1rem;
 }
 .service-box .icon-bx img {
@@ -261,12 +262,107 @@ header.sticky .navigation li a {
 .services .service-box h3 {
     font-size: 1.1rem;
     font-weight: 400;
-    color: aliceblue;
-    margin-bottom: 1.111rem;
+    color: #fff;
+    margin-bottom: 1rem;
 }
-.services .service-box h3 p {
+.services .service-box p {
+    text-align: center;
+    color: #bbbbbb;
+    font-size: 0.9rem;
+    font-weight: 300;
+}
+/* ----------- Cta --------- */
+.cta {
+    background: linear-gradient(to right, #16222a, #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.cta h2 {
+    color: white;
+}
+/* ----- Portfolio -------- */
+.portfolio {
+    background-color: #f6f6f6;
+}
+.portfolio .container .D-flex .img-col{
+    text-align: center;
+}
+.portfolio .container .D-flex .img-col img {
+    width: 450px;
+    border-radius: 20px;
+}
+.portfolio .container .D-flex .text-col {
+   align-self: center;
+}
+.portfolio .container .D-flex .text-col > div {
+    margin-bottom: .5rem;
+}
+.portfolio .container .D-flex .text-col .app-logo img {
+    width: 70px;
+}
+.portfolio .container .D-flex .text-col .app-title h3 {
+    color: #4869E8;
+    letter-spacing: .8px;
+}
+.portfolio .container .D-flex .text-col .category-text h6 {
+    font-weight: 300;
+    font-size: .8rem;
+    letter-spacing: 1px;
+    color: #e4405f;
+}
+.portfolio .container .D-flex .text-col .app-description h5 {
+    margin: .3rem 0;
+}
+.portfolio .container .D-flex .text-col .app-description ul {
+    margin-left: 2rem;
+}
+.portfolio .container .D-flex .text-col .btns a  {
+    display: inline-block;
+}
+.portfolio .container .D-flex .text-col .btns a img {
+    width: 170px;
+    height: 62px;
+    border-radius: 10px;
+}
+.portfolio .container .D-flex .text-col .btns a img:last-child {
+    margin-left: 1rem;
+}
+
+/* ------- footer -------- */
+footer {
+    padding: 20px 0;
 
 }
+footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-text-col .copyright-text {
+    color: #5e5e5e;
+}
+footer .footer-text-col .copyright-text a {
+    color: #0040FF;
+}
+footer .footer-socialLinks-col a {
+    color: black;
+}
+footer .footer-socialLinks-col i {
+    font-size: 1.3rem;
+    transition: color .3;
+}
+footer .footer-socialLinks-col a + a {
+    margin-left: 1rem;
+}
+footer .footer-socialLinks-col .fb-icon:hover {
+    color: #3b5999;
+}
+footer .footer-socialLinks-col .twitter-icon:hover {
+    color: #55acee;
+}
+footer .footer-socialLinks-col .insta-icon:hover {
+    color: #e4405f;
+}
+
+
+
 @media (max-width: 1000px) {
 
     header,
