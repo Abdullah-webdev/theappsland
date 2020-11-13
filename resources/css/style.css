@@ -57,37 +57,42 @@ p, li {
 .btn-ghost {
     border: 1px solid white;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 26px;
     display: inline-block;
     color: white;
     border-radius: 10px;
+    transition: all .4s;
 }
 
 .btn-ghost-blue {
     border: 1px solid #4869E8;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 26px;
     display: inline-block;
     color: #4869E8;
     border-radius: 10px;
+    transition: all .4s;
 }
 
 .btn-full {
     background-color: #4869E8;
     color: white;
     text-decoration: none;
-    padding: 15px 30px;
+    padding: 12px 26px;
     display: inline-block;
     border-radius: 10px;
+    transition: all .4s;
 }
-
+.btn-full:hover {
+    background-color: #0040FF;
+ }
 .btn-ghost:hover {
-    background-color: #4869E8;
+    background-color:#0040FF;
     border-color: #4869E8;
 }
 
 .btn-ghost-blue:hover {
-    background-color: #4869E8;
+    background-color: #0040FF;
     color: white;
     border-color: #4869E8;
 }
@@ -340,6 +345,11 @@ footer .footer-text-col .copyright-text {
 }
 footer .footer-text-col .copyright-text a {
     color: #0040FF;
+    transition: all .4s;
+}
+footer .footer-text-col .copyright-text a:hover {
+    color: black;
+    text-decoration: none;
 }
 footer .footer-socialLinks-col a {
     color: black;
@@ -361,7 +371,26 @@ footer .footer-socialLinks-col .insta-icon:hover {
     color: #e4405f;
 }
 
-
+@media (max-width: 1139px) {
+    :root{
+        font-size: 17px;
+    }
+    .container{
+        padding: 0 2%;
+    }
+    .banner {
+    min-height: 75vh;
+    }
+    .banner .container .content .title-box h1 {
+        font-size: 3rem;
+    }
+    .banner .container .content .title-box p {
+        font-size: 1.5rem;
+    }
+    .services .service-box h3 {
+        text-align: center;
+    }
+}
 
 @media (max-width: 1000px) {
 
