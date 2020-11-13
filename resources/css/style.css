@@ -201,7 +201,7 @@ header.sticky .navigation li a {
 /* ---- Hero ---------- */
 .banner {
     padding: 0 0;
-    background-image: url(/resources/images/main-bg1.png);
+    background-image: url(/resources/images/bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -584,7 +584,6 @@ footer .footer-socialLinks-col .insta-icon:hover {
         width: 244px;
         margin: 15px;
     }
-
     .portfolio .D-flex {
         flex-direction: column;
     }
