@@ -1,9 +1,11 @@
 /* 
     font-family: 'Poppins', sans-serif;
+    9:25----4%
     */
-:root{
+:root {
     font-size: 18px;
 }
+
 * {
     padding: 0;
     margin: 0;
@@ -16,9 +18,10 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
     font-weight: 400;
 }
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,16 +35,25 @@ img {
 }
 
 section {
-    padding: 70px 0;
+    padding: 3.79rem 0;
     width: 100%;
 }
 
-h1 {
-    font-family: 'Poppins', sans-serif;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
 }
-p, li {
+
+p,
+li {
     color: #2b2b2b;
 }
+
 .D-flex {
     display: flex;
 }
@@ -57,7 +69,7 @@ p, li {
 .btn-ghost {
     border: 1px solid white;
     text-decoration: none;
-    padding: 12px 26px;
+    padding: 0.667rem 1.444rem;
     display: inline-block;
     color: white;
     border-radius: 10px;
@@ -67,7 +79,7 @@ p, li {
 .btn-ghost-blue {
     border: 1px solid #4869E8;
     text-decoration: none;
-    padding: 12px 26px;
+    padding: 0.667rem 1.444rem;
     display: inline-block;
     color: #4869E8;
     border-radius: 10px;
@@ -78,16 +90,18 @@ p, li {
     background-color: #4869E8;
     color: white;
     text-decoration: none;
-    padding: 12px 26px;
+    padding: 0.667rem 1.444rem;
     display: inline-block;
     border-radius: 10px;
     transition: all .4s;
 }
+
 .btn-full:hover {
     background-color: #0040FF;
- }
+}
+
 .btn-ghost:hover {
-    background-color:#0040FF;
+    background-color: #0040FF;
     border-color: #4869E8;
 }
 
@@ -98,12 +112,12 @@ p, li {
 }
 
 .title-box {
-    margin-bottom: 20px;
+    margin-bottom: 1.444rem;
 }
 
 .title-box h2 {
-    color:#0040FF;
-    font-size: 2.2em;
+    color: #0040FF;
+    font-size: 2.5rem;
     font-weight: 500;
 }
 
@@ -111,14 +125,14 @@ p, li {
     content: "";
     display: block;
     height: 2px;
-    width: 100px;
+    width: 5.556rem;
     background-color: #4869E8;
-    margin: 10px auto;
-    
+    margin: 8px auto;
+
 }
 
 .title-box p {
-    font-size: 1.2em;
+    font-size: 1.2rem;
     font-weight: 300;
 }
 
@@ -204,14 +218,13 @@ header.sticky .navigation li a {
 .banner .container .content .title-box h1 {
     letter-spacing: 1px;
     font-weight: 600;
-    font-size: 3.5em;
+    font-size: 3.4rem;
     color: white;
     margin-bottom: 10px;
 }
 
 .banner .container .content .title-box p {
-    font-family: 'Poppins', sans-serif;
-    font-size: 2em;
+    font-size: 1.5rem;
     font-weight: 300;
     color: whitesmoke;
     margin-bottom: 20px;
@@ -227,106 +240,158 @@ header.sticky .navigation li a {
 }
 
 .about .D-flex .text-col .btn-ghost-blue {
-    margin-top: 20px;
+    margin-top: 1.2rem;
 }
 
 /* --------- Services ------- */
 .services {
-    background-image: url(/resources/images/service-bg3.jpg);
+    /* background-image: url(/resources/images/service-bg3.jpg);
     background-attachment: fixed;
     background-size: cover;
-    background-position: center;
+    background-position: center; */
+    background-color: #f4f4f4;
 }
 
 .services .title-box p {
-    color: white;
+    color: black;
 }
+
 .services-container {
     justify-content: space-between;
     margin-top: 4rem;
 }
-.service-box + .service-box {
+
+.service-box+.service-box {
     margin-left: 1em;
 }
+
 .service-box {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: rgba(0, 0, 0, .3);
-    padding: 30px;
-    width: 500px;
+    background-color: #fafafa;
+    padding: 3rem 1rem;
+    width: 27.778rem;
     border-radius: 5px;
+    box-shadow: 0 2px 7px 7px #efefef;
+    transition: background .4s;
+}
+
+.service-box:hover {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
+}
+.services .service-box:hover h3 {
+    color: white;
+}
+.services .service-box:hover p {
+    color: #f2f2f2;
 }
 .service-box .icon-bx {
-    width: 70px;
-    margin-bottom: 1rem;
+    width: 4.5rem;
 }
+
 .service-box .icon-bx img {
     width: 100%;
 }
+
 .services .service-box h3 {
     font-size: 1.1rem;
     font-weight: 400;
-    color: #fff;
-    margin-bottom: 1rem;
+    color: rgba(0, 0, 0, 0.9);
+    margin: .9rem 0;
+    text-align: center;
+    transition: ease all .1s;
 }
+
 .services .service-box p {
     text-align: center;
-    color: #bbbbbb;
+    /* color: #bbbbbb; */
     font-size: 0.9rem;
     font-weight: 300;
+    transition: all .1s;
 }
-/* ----------- Cta --------- */
-.cta {
-    background: linear-gradient(to right, #16222a, #3a6073); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+.service-box-1 {
+    background: linear-gradient(to right, #8e2de2, #4a00e0);
 }
-.cta h2 {
+.services .service-box-1 h3 {
     color: white;
 }
+.service-box-1 p {
+    color: #f2f2f2;
+}
+
+/* ----------- Cta --------- */
+/* .cta {
+    background: linear-gradient(to right, #16222a, #3a6073); 
+} */
+.cta-hr hr {
+    color: #0040FF;
+}
+
+.cta h2 {
+    color: #0040FF;
+    letter-spacing: .6px;
+}
+
 /* ----- Portfolio -------- */
 .portfolio {
-    background-color: #f6f6f6;
+    background-color: #f8f8f8;
 }
-.portfolio .container .D-flex .img-col{
-    text-align: center;
+
+.portfolio .container .D-flex .img-col {
+    text-align: right;
+    margin-right: 3.5rem;
 }
+
 .portfolio .container .D-flex .img-col img {
-    width: 450px;
     border-radius: 20px;
+    width: 13rem;
 }
+
 .portfolio .container .D-flex .text-col {
-   align-self: center;
+    align-self: center;
 }
-.portfolio .container .D-flex .text-col > div {
+
+.portfolio .container .D-flex .text-col>div {
     margin-bottom: .5rem;
 }
+
 .portfolio .container .D-flex .text-col .app-logo img {
     width: 70px;
 }
+
 .portfolio .container .D-flex .text-col .app-title h3 {
     color: #4869E8;
     letter-spacing: .8px;
 }
+
 .portfolio .container .D-flex .text-col .category-text h6 {
     font-weight: 300;
     font-size: .8rem;
     letter-spacing: 1px;
     color: #e4405f;
 }
+
 .portfolio .container .D-flex .text-col .app-description h5 {
     margin: .3rem 0;
+}
+.portfolio .container .D-flex .text-col .app-description p {
+    color: #3c3c3c;
 }
 .portfolio .container .D-flex .text-col .app-description ul {
     margin-left: 2rem;
 }
-.portfolio .container .D-flex .text-col .btns a  {
+
+.portfolio .container .D-flex .text-col .btns a {
     display: inline-block;
 }
+
 .portfolio .container .D-flex .text-col .btns a img {
     width: 170px;
     height: 62px;
     border-radius: 10px;
 }
+
 .portfolio .container .D-flex .text-col .btns a img:last-child {
     margin-left: 1rem;
 }
@@ -336,63 +401,69 @@ footer {
     padding: 20px 0;
 
 }
+
 footer .container {
     display: flex;
     justify-content: space-between;
 }
+
 footer .footer-text-col .copyright-text {
     color: #5e5e5e;
 }
+
 footer .footer-text-col .copyright-text a {
     color: #0040FF;
     transition: all .4s;
 }
+
 footer .footer-text-col .copyright-text a:hover {
     color: black;
     text-decoration: none;
 }
+
 footer .footer-socialLinks-col a {
     color: black;
 }
+
 footer .footer-socialLinks-col i {
     font-size: 1.3rem;
     transition: color .3;
 }
-footer .footer-socialLinks-col a + a {
+
+footer .footer-socialLinks-col a+a {
     margin-left: 1rem;
 }
+
 footer .footer-socialLinks-col .fb-icon:hover {
     color: #3b5999;
 }
+
 footer .footer-socialLinks-col .twitter-icon:hover {
     color: #55acee;
 }
+
 footer .footer-socialLinks-col .insta-icon:hover {
     color: #e4405f;
 }
 
-@media (max-width: 1139px) {
-    :root{
+@media (max-width: 1140px) {
+    :root {
         font-size: 17px;
     }
-    .container{
+
+    .container {
         padding: 0 2%;
     }
+
     .banner {
-    min-height: 75vh;
-    }
-    .banner .container .content .title-box h1 {
-        font-size: 3rem;
-    }
-    .banner .container .content .title-box p {
-        font-size: 1.5rem;
-    }
-    .services .service-box h3 {
-        text-align: center;
+        min-height: 75vh;
     }
 }
 
 @media (max-width: 1000px) {
+    :root {
+        font-size: 16px;
+    }
 
     header,
     header.sticky {
@@ -427,7 +498,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
         left: 0;
         width: 100%;
         height: calc(100% - 68px);
-        background:rgba(0, 0, 0, 0.9);
+        background: rgba(0, 0, 0, 0.9);
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -446,6 +517,22 @@ footer .footer-socialLinks-col .insta-icon:hover {
     header .navigation.active li a {
         color: #fff;
         font-size: 1.7em;
-    
+
+    }
+}
+@media (max-width: 800px) {
+    .service-box {
+      
+        padding: 21px 5px;
+        width: 27.778rem;
+    }
+}
+@media (max-width: 700px) {
+    .services-container {
+        flex-wrap: wrap;
+    }
+    .service-box {
+        padding: 21px 5px;
+        width: 300px;
     }
 }
