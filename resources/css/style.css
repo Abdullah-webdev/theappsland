@@ -405,7 +405,20 @@ header.sticky .navigation li a {
 .portfolio .container .D-flex .text-col .btns a img {
     margin-left: 1rem;
 }
-
+.portfolio .container .app-1,
+.portfolio .container .app-2 {
+    padding: 30px 0;
+}
+.portfolio .container .app-2 {
+    background-color: #fff;
+}
+.portfolio .app-2 .text-col {
+    text-align: right;
+}
+.portfolio .container .app-2 .img-col {
+    text-align: center;
+    margin-right: 0;
+}
 /* ------- footer -------- */
 footer {
     padding: 20px 0;
@@ -417,16 +430,20 @@ footer .container {
     justify-content: space-between;
 }
 
-footer .footer-text-col .copyright-text {
+footer .footer-text-col p{
+    color: #2b2b2b;
+}
+
+footer .footer-backLink-col p {
     color: #5e5e5e;
 }
 
-footer .footer-text-col .copyright-text a {
+footer .footer-link {
     color: #0040FF;
     transition: all .4s;
 }
 
-footer .footer-text-col .copyright-text a:hover {
+footer .footer-link:hover {
     color: black;
     text-decoration: none;
 }
@@ -595,6 +612,13 @@ footer .footer-socialLinks-col .insta-icon:hover {
     .portfolio .container .D-flex .img-col {
         text-align: center;
         margin-bottom: 30px;
+        order: 0;
+    }
+    .portfolio .container .D-flex .text-col {
+        order: 1;
+    }
+    .portfolio .container .app-2 .img-col {
+        order: 0;
     }
 
     .portfolio .container .D-flex .btns {
@@ -619,8 +643,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
         align-items: center;
         flex-direction: column;
     }
-
-    footer .footer-socialLinks-col {
+    footer .footer-backLink-col{
         margin-top: 20px;
     }
 
