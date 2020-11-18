@@ -374,7 +374,8 @@ header.sticky .navigation li a {
 
 .portfolio .container .D-flex .text-col .app-title h3 {
     color: #4869E8;
-    letter-spacing: .8px;
+    letter-spacing: .6px;
+    margin: 15px 0;
 }
 
 .portfolio .container .D-flex .text-col .category-text h6 {
@@ -390,6 +391,8 @@ header.sticky .navigation li a {
 
 .portfolio .container .D-flex .text-col .app-description p {
     color: #3c3c3c;
+    line-height: 27px;
+    margin: 15px 0 20px 0;
 }
 
 .portfolio .container .D-flex .text-col .app-description ul {
