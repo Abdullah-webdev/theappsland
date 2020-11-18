@@ -238,6 +238,9 @@ header.sticky .navigation li a {
 .about .D-flex .text-col {
     align-self: center;
 }
+.about .D-flex .text-col p {
+    line-height: 27px;
+}
 
 .about .D-flex .text-col .btn-ghost-blue {
     margin-top: 1.2rem;
@@ -303,7 +306,7 @@ header.sticky .navigation li a {
     font-size: 1.1rem;
     font-weight: 400;
     color: rgba(0, 0, 0, 0.9);
-    margin: .9rem 0;
+    margin: 1rem 0 .9rem 0;
     text-align: center;
     transition: ease all .1s;
 }
@@ -314,6 +317,7 @@ header.sticky .navigation li a {
     font-size: 0.9rem;
     font-weight: 300;
     transition: all .1s;
+    line-height: 27px;
 }
 
 .service-box-1 {
