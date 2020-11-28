@@ -441,10 +441,12 @@ footer .container {
 
 footer .footer-text-col p{
     color: #2b2b2b;
+    font-size: .8rem;
 }
 
 footer .footer-backLink-col p {
     color: #5e5e5e;
+    font-size: .8rem;
 }
 
 footer .footer-link {
