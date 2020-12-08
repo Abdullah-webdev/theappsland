@@ -128,7 +128,15 @@ li {
     width: 5.556rem;
     background-color: #4869E8;
     margin: 8px auto;
+    transition: all .2s;
+    -webkit-transition: all .2s;
+    -moz-transition: all .2s;
+    -ms-transition: all .2s;
+    -o-transition: all .2s;
+}
 
+.title-box h2:hover::after {
+    width: 11rem;
 }
 
 .title-box p {
@@ -286,6 +294,7 @@ header.sticky .navigation li a {
 
 .service-box:hover {
     background: linear-gradient(to right, #8e2de2, #4a00e0);
+    box-shadow: 7px 7px 12px 5px rgba(0, 0, 0, .3);
 }
 
 .services .service-box:hover h3 {
