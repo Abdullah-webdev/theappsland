@@ -202,7 +202,7 @@ header.sticky .navigation li a {
 /* ---- Hero ---------- */
 .banner {
     padding: 0 0;
-    background-image: url(/resources/images/bg1.jpg);
+    background-image: linear-gradient(to right, rgba(35, 37, 38, 0.856), rgba(65, 67, 69, 0.849)), url(/resources/images/bg1.jpg);
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -239,6 +239,7 @@ header.sticky .navigation li a {
 .about .D-flex .text-col {
     align-self: center;
 }
+
 .about .D-flex .text-col p {
     line-height: 27px;
 }
@@ -413,21 +414,26 @@ header.sticky .navigation li a {
 .portfolio .container .D-flex .text-col .btns a img {
     margin-left: 1rem;
 }
+
 .portfolio .container .app-1,
 .portfolio .container .app-2 {
     padding: 30px 0;
 }
+
 .portfolio .container .app-2 {
     background-color: #fff;
     margin: 120px 0;
 }
+
 .portfolio .app-2 .text-col {
     text-align: right;
 }
+
 .portfolio .container .app-2 .img-col {
     text-align: center;
     margin-right: 0;
 }
+
 /* ------- footer -------- */
 footer {
     padding: 20px 0;
@@ -439,7 +445,7 @@ footer .container {
     justify-content: space-between;
 }
 
-footer .footer-text-col p{
+footer .footer-text-col p {
     color: #2b2b2b;
     font-size: .8rem;
 }
@@ -557,9 +563,10 @@ footer .footer-socialLinks-col .insta-icon:hover {
         font-size: 1.7em;
 
     }
+
     .banner .container .content .title-box h1 {
         font-size: 3rem;
-        
+
     }
 
 }
@@ -568,6 +575,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
     .banner .container .content .title-box h1 {
         font-size: 2.7rem;
     }
+
     .about .title-box {
         margin-bottom: 2.5rem;
     }
@@ -604,6 +612,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
         padding: 21px 5px;
         width: 260px;
     }
+
     .portfolio .container .app-2 {
         margin: 90px 0;
     }
@@ -615,6 +624,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
         width: 244px;
         margin: 15px;
     }
+
     .portfolio .D-flex {
         flex-direction: column;
     }
@@ -628,9 +638,11 @@ footer .footer-socialLinks-col .insta-icon:hover {
         margin-bottom: 30px;
         order: 0;
     }
+
     .portfolio .container .D-flex .text-col {
         order: 1;
     }
+
     .portfolio .container .app-2 .img-col {
         order: 0;
     }
@@ -657,7 +669,8 @@ footer .footer-socialLinks-col .insta-icon:hover {
         align-items: center;
         flex-direction: column;
     }
-    footer .footer-backLink-col{
+
+    footer .footer-backLink-col {
         margin-top: 20px;
     }
 
@@ -668,6 +681,7 @@ footer .footer-socialLinks-col .insta-icon:hover {
         width: 500px;
         margin: 13px;
     }
+
     .portfolio .container .app-2 {
         margin: 60px 0;
     }
