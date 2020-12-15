@@ -1,0 +1,23 @@
+{
+  "name": "the_apps_land",
+  "version": "1.0.0",
+  "description": "Website Code for theappsland.vercel.app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "node-sass sass/main.scss resources/css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Abdullah-webdev/theappsland.git"
+  },
+  "author": "Abdullah-webdev",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Abdullah-webdev/theappsland/issues"
+  },
+  "homepage": "https://github.com/Abdullah-webdev/theappsland#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}

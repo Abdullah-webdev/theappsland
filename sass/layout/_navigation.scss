@@ -1,0 +1,61 @@
+/* ----- Header ------ */
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 20px 0;
+    align-items: center;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+}
+
+header .logo {
+    font-weight: 700;
+    font-size: 2em;
+}
+
+header .logo span {
+    color: #ff0157;
+    width: 5px;
+    height: 5px;
+}
+
+header .navigation {
+    list-style-type: none;
+    display: flex;
+    font-weight: 300;
+}
+
+header .navigation li+li {
+    margin-left: 20px;
+}
+
+header .navigation li a {
+    transition: border-bottom 0.5s;
+}
+
+header .navigation li a:hover,
+header .navigation li a:active {
+    border-bottom: 2px solid #0040FF;
+}
+
+header.sticky {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    left: 0;
+    padding: 10px 100px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+header.sticky .logo {
+    color: #111111;
+}
+
+header.sticky .navigation li a {
+    color: #111;
+}

@@ -1,0 +1,48 @@
+.btns {
+    margin-top: 1.667rem;
+}
+
+.btn-ghost {
+    border: 1px solid white;
+    text-decoration: none;
+    padding: 0.667rem 1.444rem;
+    display: inline-block;
+    color: white;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.btn-ghost-blue {
+    border: 1px solid #4869E8;
+    text-decoration: none;
+    padding: 0.667rem 1.444rem;
+    display: inline-block;
+    color: #4869E8;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.btn-full {
+    background-color: #4869E8;
+    color: white;
+    text-decoration: none;
+    padding: 0.667rem 1.444rem;
+    display: inline-block;
+    border-radius: 10px;
+    transition: all .4s;
+}
+
+.btn-full:hover {
+    background-color: #0040FF;
+}
+
+.btn-ghost:hover {
+    background-color: #0040FF;
+    border-color: #4869E8;
+}
+
+.btn-ghost-blue:hover {
+    background-color: #0040FF;
+    color: white;
+    border-color: #4869E8;
+}
