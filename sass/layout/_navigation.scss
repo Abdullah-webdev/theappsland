@@ -13,20 +13,13 @@ header a {
 }
 
 header .logo {
-    font-weight: 700;
-    font-size: 2em;
-}
-
-header .logo span {
-    color: #ff0157;
-    width: 5px;
-    height: 5px;
+    width: 4rem;
 }
 
 header .navigation {
     list-style-type: none;
     display: flex;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 header .navigation li+li {
