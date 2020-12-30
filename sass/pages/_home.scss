@@ -53,6 +53,8 @@
 .about .D-flex .img-col {
     display: grid;
     justify-content: center;
+
+    overflow: hidden;
 }
 
 /* --------- Services ------- */

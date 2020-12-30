@@ -373,7 +373,8 @@ footer .footer-socialLinks-col .insta-icon:hover {
 
 .about .D-flex .img-col {
   display: grid;
-  justify-content: center; }
+  justify-content: center;
+  overflow: hidden; }
 
 /* --------- Services ------- */
 .services {
@@ -507,6 +508,9 @@ footer .footer-socialLinks-col .insta-icon:hover {
     order: 5; } }
 
 @media screen and (max-width: 620px) {
+  .about .D-flex .img-col lottie-player {
+    width: 300px !important;
+    height: 300px !important; }
   .app .D-flex {
     flex-direction: column; }
     .app .D-flex .col {
@@ -539,3 +543,15 @@ footer .footer-socialLinks-col .insta-icon:hover {
     font-size: 2.3rem; }
   .banner .container .content .title-box p {
     font-size: 1.3rem; } }
+
+@media screen and (max-width: 400px) {
+  .about .D-flex .img-col lottie-player {
+    width: 260px !important;
+    height: 260px !important; } }
+
+@media screen and (max-width: 300px) {
+  .about .D-flex .img-col lottie-player {
+    width: 220px !important;
+    height: 220px !important; }
+  .services .services-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); } }
