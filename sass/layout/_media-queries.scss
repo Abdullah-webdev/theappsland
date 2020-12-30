@@ -1,4 +1,4 @@
-@media (max-width: 1140px) {
+@media screen and (max-width: 1140px) {
     :root {
         font-size: 17px;
     }
@@ -12,7 +12,7 @@
     }
 }
 
-@media (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     :root {
         font-size: 16px;
     }
@@ -74,9 +74,39 @@
     .banner .container .content .title-box h1 {
         font-size: 3rem;
     }
+
+
+    .service-box {
+
+        &:nth-of-type(1) {
+            order: 1;
+        }
+
+        &:nth-of-type(2) {
+            order: 4;
+        }
+
+        &:nth-of-type(3) {
+            grid-column: 1 / -1;
+            order: 2;
+        }
+
+        &:nth-of-type(4) {
+            order: 5;
+        }
+
+        &:nth-of-type(5) {
+            order: 5;
+        }
+
+        &:nth-of-type(6) {
+            grid-column: 1 / -1;
+            order: 6;
+        }
+    }
 }
 
-@media (max-width: 800px) {
+@media screen and (max-width: 800px) {
     .banner .container .content .title-box h1 {
         font-size: 2.7rem;
     }
@@ -101,33 +131,49 @@
         width: 500px;
     }
 
-    .service-box {
-        padding: 21px 5px;
-        width: 280px;
-    }
-
     .app .D-flex .text-col .btns a img {
         margin: 10px 0 0 0;
     }
 }
 
-@media (max-width: 700px) {
-    .service-box {
-        padding: 21px 5px;
-        width: 260px;
-    }
+@media screen and (max-width: 700px) {
 
     .app .app-2 {
         margin: 90px 0;
     }
 }
 
-@media (max-width: 620px) {
+@media screen and (max-width: 650px) {
+
     .service-box {
-        padding: 21px 5px;
-        width: 244px;
-        margin: 15px;
+
+        &:nth-of-type(1) {
+            order: 1;
+        }
+
+        &:nth-of-type(2) {
+            order: 2;
+        }
+
+        &:nth-of-type(3) {
+            order: 6;
+        }
+
+        &:nth-of-type(4) {
+            order: 4;
+        }
+
+        &:nth-of-type(5) {
+            order: 5;
+        }
+
+        &:nth-of-type(6) {
+            order: 5;
+        }
     }
+}
+
+@media screen and (max-width: 620px) {
 
     .app {
         .D-flex {
@@ -172,18 +218,18 @@
     }
 }
 
-@media (max-width: 571px) {
-    .service-box {
-        width: 500px;
-        margin: 13px;
-    }
+@media screen and (max-width: 571px) {
+    // .service-box {
+    //     width: 500px;
+    //     margin: 13px;
+    // }
 
     .app .app-2 {
         margin: 60px 0;
     }
 }
 
-@media (max-width: 500px) {
+@media screen and (max-width: 500px) {
     .banner .container .content .title-box h1 {
         font-size: 2.3rem;
     }
