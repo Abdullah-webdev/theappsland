@@ -1,0 +1,64 @@
+header.privacy-header {
+    a {
+        color: $color-dark;
+    }
+
+}
+
+.privacy-hero {
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(#292929, .7), rgba(#292929, .7)), url(../../resources/images/privacy-polic-1.jpg);
+    background-position: center;
+    background-size: cover;
+
+    color: $color-white;
+}
+
+.privacy-content {
+
+    background-color: #f8f8f8;
+
+    .container {
+        width: 95%;
+        margin: 1rem auto;
+        padding: 2rem;
+        background-color: $color-white;
+        border-radius: 10px;
+        box-shadow: 0 .4rem .8rem rgba($color-black, .2);
+
+        &>* {
+            margin: 1rem 0;
+        }
+
+        p {
+            font-weight: 300;
+            font-size: 1.1rem;
+        }
+
+        h3 {
+            color: $color-primary-light;
+
+            &::after {
+                content: "";
+                display: block;
+                height: 10px;
+                margin-top: -15px;
+                width: 15%;
+                background-color: rgba($color-primary-dark, .3);
+            }
+        }
+
+        h4 {
+            color: $color-black;
+        }
+
+        a {
+            font-size: .9rem;
+        }
+
+
+    }
+}

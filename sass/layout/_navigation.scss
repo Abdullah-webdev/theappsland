@@ -8,7 +8,7 @@ header {
 }
 
 header a {
-    color: white;
+    color: $color-white;
     text-decoration: none;
 }
 
@@ -32,7 +32,7 @@ header .navigation li a {
 
 header .navigation li a:hover,
 header .navigation li a:active {
-    border-bottom: 1px solid #6f7a9b;
+    border-bottom: 1px solid #6f7a9b !important;
     color: #1f51e7;
 }
 
@@ -42,14 +42,14 @@ header.sticky {
     top: 0;
     left: 0;
     padding: 10px 100px;
-    background: #fff;
+    background: $color-white;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-header.sticky .logo {
-    color: #111111;
-}
-
 header.sticky .navigation li a {
-    color: #111;
+    color: $color-dark;
+
+    &:hover {
+        color: #1f51e7;
+    }
 }
